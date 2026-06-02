@@ -1,0 +1,184 @@
+{
+    "core_analysis": {
+        "path": "understand-anything-plugin/packages/core/src/analyzer",
+        "components": [
+            "understand-anything-plugin\\packages\\core\\src\\analyzer\\graph-builder.ts::GraphBuilder",
+            "understand-anything-plugin\\packages\\core\\src\\analyzer\\graph-builder.ts::FileMeta",
+            "understand-anything-plugin\\packages\\core\\src\\analyzer\\graph-builder.ts::FileAnalysisMeta",
+            "understand-anything-plugin\\packages\\core\\src\\analyzer\\graph-builder.ts::NonCodeFileMeta",
+            "understand-anything-plugin\\packages\\core\\src\\analyzer\\graph-builder.ts::NonCodeFileAnalysisMeta",
+            "understand-anything-plugin\\packages\\core\\src\\analyzer\\llm-analyzer.ts::LLMFileAnalysis",
+            "understand-anything-plugin\\packages\\core\\src\\analyzer\\llm-analyzer.ts::LLMProjectSummary",
+            "understand-anything-plugin\\packages\\core\\src\\analyzer\\normalize-graph.ts::NormalizationStats",
+            "understand-anything-plugin\\packages\\core\\src\\analyzer\\normalize-graph.ts::NormalizeBatchResult",
+            "understand-anything-plugin\\packages\\core\\src\\analyzer\\normalize-graph.ts::DroppedEdge",
+            "understand-anything-plugin\\packages\\core\\src\\analyzer\\layer-detector.ts::LLMLayerResponse",
+            "understand-anything-plugin\\packages\\core\\src\\analyzer\\language-lesson.ts::LanguageLessonResult"
+        ],
+        "children": {}
+    },
+    "core_change_tracking": {
+        "path": "understand-anything-plugin/packages/core/src",
+        "components": [
+            "understand-anything-plugin\\packages\\core\\src\\change-classifier.ts::UpdateDecision",
+            "understand-anything-plugin\\packages\\core\\src\\fingerprint.ts::FingerprintStore",
+            "understand-anything-plugin\\packages\\core\\src\\fingerprint.ts::FunctionFingerprint",
+            "understand-anything-plugin\\packages\\core\\src\\fingerprint.ts::FileChangeResult",
+            "understand-anything-plugin\\packages\\core\\src\\fingerprint.ts::ImportFingerprint",
+            "understand-anything-plugin\\packages\\core\\src\\fingerprint.ts::ClassFingerprint",
+            "understand-anything-plugin\\packages\\core\\src\\fingerprint.ts::FileFingerprint",
+            "understand-anything-plugin\\packages\\core\\src\\fingerprint.ts::ChangeAnalysis",
+            "understand-anything-plugin\\packages\\core\\src\\staleness.ts::StalenessResult"
+        ],
+        "children": {}
+    },
+    "core_search": {
+        "path": "understand-anything-plugin/packages/core/src",
+        "components": [
+            "understand-anything-plugin\\packages\\core\\src\\search.ts::SearchOptions",
+            "understand-anything-plugin\\packages\\core\\src\\search.ts::SearchEngine",
+            "understand-anything-plugin\\packages\\core\\src\\search.ts::SearchResult",
+            "understand-anything-plugin\\packages\\core\\src\\embedding-search.ts::SemanticSearchOptions",
+            "understand-anything-plugin\\packages\\core\\src\\embedding-search.ts::SemanticSearchEngine"
+        ],
+        "children": {}
+    },
+    "core_schema_and_types": {
+        "path": "understand-anything-plugin/packages/core/src",
+        "components": [
+            "understand-anything-plugin\\packages\\core\\src\\schema.ts::GraphIssue",
+            "understand-anything-plugin\\packages\\core\\src\\schema.ts::ValidationResult",
+            "understand-anything-plugin\\packages\\core\\src\\types.ts::EndpointInfo",
+            "understand-anything-plugin\\packages\\core\\src\\types.ts::CallGraphEntry",
+            "understand-anything-plugin\\packages\\core\\src\\types.ts::ImportResolution",
+            "understand-anything-plugin\\packages\\core\\src\\types.ts::TourStep",
+            "understand-anything-plugin\\packages\\core\\src\\types.ts::SectionInfo",
+            "understand-anything-plugin\\packages\\core\\src\\types.ts::GraphEdge",
+            "understand-anything-plugin\\packages\\core\\src\\types.ts::ResourceInfo",
+            "understand-anything-plugin\\packages\\core\\src\\types.ts::ThemeConfig",
+            "understand-anything-plugin\\packages\\core\\src\\types.ts::StructuralAnalysis",
+            "understand-anything-plugin\\packages\\core\\src\\types.ts::Layer",
+            "understand-anything-plugin\\packages\\core\\src\\types.ts::ReferenceResolution",
+            "understand-anything-plugin\\packages\\core\\src\\types.ts::ProjectMeta",
+            "understand-anything-plugin\\packages\\core\\src\\types.ts::ProjectConfig",
+            "understand-anything-plugin\\packages\\core\\src\\types.ts::KnowledgeMeta",
+            "understand-anything-plugin\\packages\\core\\src\\types.ts::DefinitionInfo",
+            "understand-anything-plugin\\packages\\core\\src\\types.ts::AnalysisMeta",
+            "understand-anything-plugin\\packages\\core\\src\\types.ts::GraphNode",
+            "understand-anything-plugin\\packages\\core\\src\\types.ts::ServiceInfo",
+            "understand-anything-plugin\\packages\\core\\src\\types.ts::StepInfo",
+            "understand-anything-plugin\\packages\\core\\src\\types.ts::DomainMeta",
+            "understand-anything-plugin\\packages\\core\\src\\types.ts::KnowledgeGraph",
+            "understand-anything-plugin\\packages\\core\\src\\types.ts::AnalyzerPlugin"
+        ],
+        "children": {}
+    },
+    "core_plugin_system": {
+        "path": "understand-anything-plugin/packages/core/src/plugins",
+        "components": [
+            "understand-anything-plugin\\packages\\core\\src\\plugins\\discovery.ts::PluginConfig",
+            "understand-anything-plugin\\packages\\core\\src\\plugins\\discovery.ts::PluginEntry",
+            "understand-anything-plugin\\packages\\core\\src\\plugins\\registry.ts::PluginRegistry",
+            "understand-anything-plugin\\packages\\core\\src\\plugins\\tree-sitter-plugin.ts::TreeSitterPlugin"
+        ],
+        "children": {}
+    },
+    "core_language_support": {
+        "path": "understand-anything-plugin/packages/core/src/languages",
+        "components": [
+            "understand-anything-plugin\\packages\\core\\src\\languages\\framework-registry.ts::FrameworkRegistry",
+            "understand-anything-plugin\\packages\\core\\src\\languages\\language-registry.ts::LanguageRegistry",
+            "understand-anything-plugin\\packages\\core\\src\\plugins\\extractors\\types.ts::LanguageExtractor",
+            "understand-anything-plugin\\packages\\core\\src\\plugins\\extractors\\cpp-extractor.ts::CppExtractor",
+            "understand-anything-plugin\\packages\\core\\src\\plugins\\extractors\\csharp-extractor.ts::CSharpExtractor",
+            "understand-anything-plugin\\packages\\core\\src\\plugins\\extractors\\go-extractor.ts::GoExtractor",
+            "understand-anything-plugin\\packages\\core\\src\\plugins\\extractors\\java-extractor.ts::JavaExtractor",
+            "understand-anything-plugin\\packages\\core\\src\\plugins\\extractors\\php-extractor.ts::PhpExtractor",
+            "understand-anything-plugin\\packages\\core\\src\\plugins\\extractors\\python-extractor.ts::PythonExtractor",
+            "understand-anything-plugin\\packages\\core\\src\\plugins\\extractors\\ruby-extractor.ts::RubyExtractor",
+            "understand-anything-plugin\\packages\\core\\src\\plugins\\extractors\\rust-extractor.ts::RustExtractor",
+            "understand-anything-plugin\\packages\\core\\src\\plugins\\extractors\\typescript-extractor.ts::TypeScriptExtractor"
+        ],
+        "children": {}
+    },
+    "core_config_parsers": {
+        "path": "understand-anything-plugin/packages/core/src/plugins/parsers",
+        "components": [
+            "understand-anything-plugin\\packages\\core\\src\\plugins\\parsers\\dockerfile-parser.ts::DockerfileParser",
+            "understand-anything-plugin\\packages\\core\\src\\plugins\\parsers\\env-parser.ts::EnvParser",
+            "understand-anything-plugin\\packages\\core\\src\\plugins\\parsers\\graphql-parser.ts::GraphQLParser",
+            "understand-anything-plugin\\packages\\core\\src\\plugins\\parsers\\json-parser.ts::JSONConfigParser",
+            "understand-anything-plugin\\packages\\core\\src\\plugins\\parsers\\makefile-parser.ts::MakefileParser",
+            "understand-anything-plugin\\packages\\core\\src\\plugins\\parsers\\markdown-parser.ts::MarkdownParser",
+            "understand-anything-plugin\\packages\\core\\src\\plugins\\parsers\\protobuf-parser.ts::ProtobufParser",
+            "understand-anything-plugin\\packages\\core\\src\\plugins\\parsers\\shell-parser.ts::ShellParser",
+            "understand-anything-plugin\\packages\\core\\src\\plugins\\parsers\\sql-parser.ts::SQLParser",
+            "understand-anything-plugin\\packages\\core\\src\\plugins\\parsers\\terraform-parser.ts::TerraformParser",
+            "understand-anything-plugin\\packages\\core\\src\\plugins\\parsers\\toml-parser.ts::TOMLParser",
+            "understand-anything-plugin\\packages\\core\\src\\plugins\\parsers\\yaml-parser.ts::YAMLConfigParser"
+        ],
+        "children": {}
+    },
+    "dashboard_graph_view": {
+        "path": "understand-anything-plugin/packages/dashboard/src/components",
+        "components": [
+            "understand-anything-plugin\\packages\\dashboard\\src\\components\\DomainGraphView.tsx::BuiltGraph",
+            "understand-anything-plugin\\packages\\dashboard\\src\\components\\ContainerNode.tsx::ContainerNodeData",
+            "understand-anything-plugin\\packages\\dashboard\\src\\components\\CustomNode.tsx::CustomNodeData",
+            "understand-anything-plugin\\packages\\dashboard\\src\\components\\DomainClusterNode.tsx::DomainClusterData",
+            "understand-anything-plugin\\packages\\dashboard\\src\\components\\FlowNode.tsx::FlowNodeData",
+            "understand-anything-plugin\\packages\\dashboard\\src\\components\\LayerClusterNode.tsx::LayerClusterData",
+            "understand-anything-plugin\\packages\\dashboard\\src\\components\\PortalNode.tsx::PortalNodeData",
+            "understand-anything-plugin\\packages\\dashboard\\src\\components\\StepNode.tsx::StepNodeData"
+        ],
+        "children": {}
+    },
+    "dashboard_state_and_ui": {
+        "path": "understand-anything-plugin/packages/dashboard/src",
+        "components": [
+            "understand-anything-plugin\\packages\\dashboard\\src\\contexts\\I18nContext.tsx::I18nContextValue",
+            "understand-anything-plugin\\packages\\dashboard\\src\\hooks\\useKeyboardShortcuts.ts::KeyboardShortcut",
+            "understand-anything-plugin\\packages\\dashboard\\src\\store.ts::FilterState",
+            "understand-anything-plugin\\packages\\dashboard\\src\\store.ts::DashboardStore",
+            "understand-anything-plugin\\packages\\dashboard\\src\\themes\\ThemeContext.tsx::ThemeProviderProps",
+            "understand-anything-plugin\\packages\\dashboard\\src\\themes\\ThemeContext.tsx::ThemeContextValue",
+            "understand-anything-plugin\\packages\\dashboard\\src\\themes\\types.ts::ThemePreset",
+            "understand-anything-plugin\\packages\\dashboard\\src\\themes\\types.ts::AccentSwatch",
+            "understand-anything-plugin\\packages\\dashboard\\src\\themes\\types.ts::ThemeConfig",
+            "understand-anything-plugin\\packages\\dashboard\\src\\components\\KeyboardShortcutsHelp.tsx::KeyboardShortcutsHelpProps"
+        ],
+        "children": {}
+    },
+    "dashboard_layout_utils": {
+        "path": "understand-anything-plugin/packages/dashboard/src/utils",
+        "components": [
+            "understand-anything-plugin\\packages\\dashboard\\src\\utils\\containers.ts::DerivedContainer",
+            "understand-anything-plugin\\packages\\dashboard\\src\\utils\\containers.ts::DeriveResult",
+            "understand-anything-plugin\\packages\\dashboard\\src\\utils\\edgeAggregation.ts::AggregatedContainerEdge",
+            "understand-anything-plugin\\packages\\dashboard\\src\\utils\\edgeAggregation.ts::LayerEdgeAggregation",
+            "understand-anything-plugin\\packages\\dashboard\\src\\utils\\edgeAggregation.ts::PortalInfo",
+            "understand-anything-plugin\\packages\\dashboard\\src\\utils\\edgeAggregation.ts::ContainerEdgeBuckets",
+            "understand-anything-plugin\\packages\\dashboard\\src\\utils\\elk-layout.ts::ElkInput",
+            "understand-anything-plugin\\packages\\dashboard\\src\\utils\\elk-layout.ts::ElkLayoutOptions",
+            "understand-anything-plugin\\packages\\dashboard\\src\\utils\\elk-layout.ts::ElkLayoutResult",
+            "understand-anything-plugin\\packages\\dashboard\\src\\utils\\elk-layout.ts::RepairOptions",
+            "understand-anything-plugin\\packages\\dashboard\\src\\utils\\elk-layout.ts::ElkChild",
+            "understand-anything-plugin\\packages\\dashboard\\src\\utils\\elk-layout.ts::ElkEdge",
+            "understand-anything-plugin\\packages\\dashboard\\src\\utils\\elk-layout.ts::RepairResult",
+            "understand-anything-plugin\\packages\\dashboard\\src\\utils\\layerStats.ts::LayerStats",
+            "understand-anything-plugin\\packages\\dashboard\\src\\utils\\layout.ts::ForceNode",
+            "understand-anything-plugin\\packages\\dashboard\\src\\utils\\layout.worker.ts::LayoutMessage",
+            "understand-anything-plugin\\packages\\dashboard\\src\\utils\\layout.worker.ts::LayoutResult"
+        ],
+        "children": {}
+    },
+    "app_context_builders": {
+        "path": "understand-anything-plugin/src",
+        "components": [
+            "understand-anything-plugin\\src\\context-builder.ts::ChatContext",
+            "understand-anything-plugin\\src\\diff-analyzer.ts::DiffContext",
+            "understand-anything-plugin\\src\\explain-builder.ts::ExplainContext"
+        ],
+        "children": {}
+    }
+}
