@@ -1726,6 +1726,7 @@ git commit -m "feat(dashboard): scaffold React + Vite app with Tailwind, Zustand
 
 Create: `packages/dashboard/src/components/CustomNode.tsx`
 
+{% raw %}
 ```tsx
 import { Handle, Position } from "@xyflow/react";
 import type { NodeProps } from "@xyflow/react";
@@ -1797,6 +1798,7 @@ export function CustomNode({ data }: NodeProps<CustomNodeData>) {
   );
 }
 ```
+{% endraw %}
 
 **Step 2: Create the GraphView component**
 
